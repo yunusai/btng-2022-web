@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+    color: yellowgreen;
+    padding: 10px /*atas*/ 20px /*kanan*/ 30px/*bawah*/ 40px/*kiri*/; /* Pemberian value sesuai arah jarum jam */
+}
+a:hover{/* styling ketika cursor diarahkan ke link */
+    transition: 0.3s;/* mengatur waktu yang dibutuhkan untuk berubah menjadi sesuai dengan format yang diinginkan */
+    color:red;
+    text-decoration: underline;
+    border: 2px solid gold;
+    background-color: blue;
+    font-weight: 900;/* menebalkan font */
+}
+a:active{/* styling ketika dipencet */
+    transform: scale(0.8);
+    color: white;
+    background-color: black;
+}
