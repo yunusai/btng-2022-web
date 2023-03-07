@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+	font-family: 'montserrat', sans-serif;
+}
+body {
+	background-color: #ffffff;
+}
+
+html::-webkit-scrollbar {
+	width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+
+html::-webkit-scrollbar-thumb {
+	background: #0d6efd;
+}
+
+.services {
+	background-color: #f7f7f7;
+}
+
+.services .card .card-body:hover {
+	background-color: #0d6efd;
+	color: #ffffff;
+	cursor: pointer;
+}
+.services .card .card-body:hover img {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+.services .card .card-body .card-title {
+	font-weight: 500;
+	font-size: 20px;
+}
+
+.portfolio .portfolio-title {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.team {
+	background-color: #f7f7f7;
+}
+
+.service-img{
+	width: 30px;
+	height: 30px;
+}

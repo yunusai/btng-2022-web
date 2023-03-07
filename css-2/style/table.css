@@ -1,0 +1,30 @@
+table,td,th{
+    color: blue;
+    border: 1px dashed black;
+}
+
+th{
+    height: 50px;
+    background-color: aqua;
+    vertical-align: baseline; /* Naik Ke atas, jika "bottom" ke bawah, intinya mengatur text-align secara vertical */
+}
+
+table{
+    border-collapse:collapse; /* Mau berapapun jumlah border yang dibuat pada suatu tabel
+     yang telah di isikan di HTML, perintah ini akan menggabung border tersebut menjadi 1 */
+    width: 60%;
+}
+
+tr:nth-child(odd){ /* Ketika ingin mewarnai/mengedit selang seling genap ganjil */
+    text-align: center;
+    background-color: blue;
+}
+
+td:nth-child(odd){ /* Ketika ingin mewarnai/mengedit selang seling genap ganjil */
+    text-align: center;
+    background-color: blueviolet;
+}
+
+
+
+

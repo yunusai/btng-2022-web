@@ -1,0 +1,61 @@
+.container{
+    display: flex; /* flex mengubah sifat div yang urutannya urut vertical menjadi sesuai dengan direction yang diinginkan*/
+    width: 90%;
+    height: 300px;
+    border: 2px solid black;
+    margin: 30px auto;
+    padding: 5px;
+    flex-direction: row-reverse; 
+    /* direction yang diinginkan */
+    flex-wrap:wrap; 
+    /* untuk nge wrap tulisan yang kelebihan, yang kelebihan akan diturunkan 1 row */
+    justify-content: center; 
+    /* mengatur jarak atau align item secara horizontal */
+    align-items: center; 
+    /* Sama seperti justify-content tapi secara vertikal */
+    /* baseline membuat antar item menyesuaikan tingginya dengan item dengan ukuran paling besar */
+    /* stretch membuat semua ukuran item menyesuaikan container */
+    align-content: flex-start; 
+    /* digunakan ketika ada 2 baris */
+}
+.item{
+    width: 120px;/* menyesuaikan layar */
+    height: 120px;
+    background-color: aqua;
+    margin: 5px;
+}
+
+.kotak1{
+    order: 1;
+    /* untuk mengubah urutan item */
+    /* semakin besar angka yang dimasukkan semakin ke kanan item nya */
+    flex-grow: 1;
+    /* atau bisa juga flex: 1; */
+    /* mengatur ukuran item */
+    align-self: flex-end;
+    /* untuk mengubah align tetapi cuma satu item saja */
+    /* tidak berubah ketika ditampilkan karena sudah ada di pengaturan container */
+}
+.kotak2{
+    order: 2;
+    flex: 2;
+    align-self: stretch;
+}
+.kotak3{
+    order: 3;
+    align-self: flex-start;
+}
+.kotak4{
+    order: 4;
+    align-self: center;
+}
+.kotak5{
+    order: 5;
+    align-self: baseline;
+}
+.kotak6{
+    order: 6;
+}
+.kotak7{
+    order: 7;
+}
